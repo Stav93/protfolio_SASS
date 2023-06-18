@@ -1,0 +1,20 @@
+//Variebales
+$website-width: 1280px;
+$main-color: #bb7a84;
+// $main-color: #8b6369;
+// $main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url("../img/safar-safarov-MSN8TFhJ0is-unsplash-red.jpg");
+// $bg-image: url("../img/showcase.jpg");
+
+//Functions
+//set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
