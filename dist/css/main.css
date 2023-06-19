@@ -13,7 +13,7 @@
 
 .btn-main {
   color: #333;
-  background-color: #bb7a84; }
+  background-color: #ee7560; }
 
 .btn-light {
   color: #333;
@@ -26,10 +26,10 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: #bb7a84; }
+  background-color: #ee7560; }
 
 .bg-main {
-  background: #bb7a84;
+  background: #ee7560;
   color: #000; }
 
 .bg-dark {
@@ -86,7 +86,7 @@ input[class^="btn-"]:hover {
 .buttom-line {
   height: 2px;
   width: 3rem;
-  background: #bb7a84;
+  background: #ee7560;
   display: block;
   margin: 0 auto 1rem auto; }
 
@@ -97,7 +97,7 @@ input[class^="btn-"]:hover {
 
 .item {
   position: relative;
-  background: #bb7a84;
+  background: #ee7560;
   overflow: hidden; }
   .item::after {
     content: "";
@@ -205,15 +205,15 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 3px transparent solid;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.2rem;
     transition: border-color 0.5s; }
     #main-nav a:hover {
       border-color: #ccc; }
     #main-nav a.current {
-      border-color: #bb7a84; }
+      border-color: #ff8d71; }
 
 #header-home {
-  background: url("../img/safar-safarov-MSN8TFhJ0is-unsplash-red.jpg") no-repeat center right/cover;
+  background: url("../img/tai-bui-393l7SYoM7w-unsplash.jpg") no-repeat center right/cover;
   height: 100vh;
   color: white; }
   #header-home .header-content {
@@ -228,9 +228,9 @@ img {
       padding-top: 1.2rem; }
 
 #header-inner {
-  background: url("../img/safar-safarov-MSN8TFhJ0is-unsplash-red.jpg") no-repeat 20% 30%/cover;
+  background: url("../img/tai-bui-393l7SYoM7w-unsplash.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
-  border-bottom: 3px solid #bb7a84; }
+  border-bottom: 3px solid #ee7560; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -238,31 +238,39 @@ img {
   grid-gap: 1rem;
   grid-template-columns: repeat(4, 1fr); }
   #home-a .specials .fas {
-    color: #bb7a84;
+    color: #ee7560;
     padding-bottom: 0.4rem; }
 
 #home-b .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-columns: repeat(3, 1fr); }
 
 #home-b li {
   line-height: 2; }
   #home-b li.stats-title {
-    font-size: 1.5rem; }
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    padding-top: 0.3rem;
+    padding-bottom: 0.8rem; }
+  #home-b li.stats-p {
+    font-size: 1rem;
+    line-height: 1.2; }
   #home-b li.stats-number {
-    font-size: 2rem;
-    font-weight: bold; }
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-top: 0.5rem; }
 
 #home-b div {
-  padding: 3rem 0; }
-  #home-b div:nth-child(odd) {
-    background: #f4f4f4; }
-  #home-b div:nth-child(even) {
-    background: #ccc; }
+  padding: 3rem 0.5rem;
+  background: #f4f4f4; }
+  #home-b div div {
+    background: #de9285;
+    border: 4px #f4f4f4 solid; }
 
 #home-c .process {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 350px;
   grid-gap: 1.5rem;
   text-align: center; }
@@ -278,7 +286,7 @@ img {
     position: relative;
     transition: all 1s; }
     #home-c .process-icon:hover {
-      background: #bb7a84;
+      background: #ee7560;
       width: 90px;
       height: 90px;
       line-height: 90px; }
@@ -288,13 +296,13 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 28px;
-    background: #bb7a84;
+    font-size: 20px;
+    background: #ee7560;
     color: #fff;
     border-radius: 50%;
-    height: 15px;
-    width: 15px;
-    line-height: 15px;
+    height: 10px;
+    width: 10px;
+    line-height: 20px;
     padding: 1rem;
     transition: all 1s; }
 
@@ -305,7 +313,7 @@ img {
   #about-a .about-info .award-1 .fas,
   #about-a .about-info .award-2 .fas,
   #about-a .about-info .award-3 .fas {
-    color: #bb7a84;
+    color: #ee7560;
     margin: 1rem; }
 
 #about-a .bio-image {
@@ -313,7 +321,7 @@ img {
 
 #about-a .bio {
   grid-area: bio;
-  border-left: 3px solid #bb7a84;
+  border-left: 3px solid #ee7560;
   padding: 0.8rem; }
 
 #about-a .award-1 {
@@ -335,7 +343,7 @@ img {
     height: 100%;
     color: #fff;
     text-align: center;
-    background: #bb7a84; }
+    background: #ee7560; }
 
 #about-c .about-logos {
   display: grid;
@@ -414,7 +422,7 @@ img {
       text-align: center;
       padding: 0.5rem; }
       #main-footer .footer-content .social .fab:hover {
-        background: #bb7a84; }
+        background: #ee7560; }
 
 @media (max-width: 800px) {
   #header-home {
@@ -437,7 +445,7 @@ img {
       padding: 1rem; }
   #header-home {
     height: 10rem;
-    border-bottom: 3px solid #bb7a84;
+    border-bottom: 3px solid #ee7560;
     background-position: 20% 30%; }
     #header-home .header-content {
       display: none; }
