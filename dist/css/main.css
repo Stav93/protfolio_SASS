@@ -272,23 +272,42 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 350px;
-  grid-gap: 1.5rem;
-  text-align: center; }
+  grid-gap: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 7rem; }
+  #home-c .process h3 {
+    margin-top: 1rem; }
+  #home-c .process .project-1 {
+    background: rgba(93, 3, 121, 0.8);
+    width: 4.5rem; }
+  #home-c .process .project-2 {
+    background: rgba(10, 3, 103, 0.8);
+    width: 4.5rem; }
+  #home-c .process #project-1 {
+    background: url("../img/dogs parks app.png") no-repeat 50% 50%/cover;
+    color: rgba(93, 3, 121, 0.2);
+    width: 120px; }
+  #home-c .process #project-2 {
+    background: url("../img/me and my dog.png") no-repeat 50% 50%/cover;
+    color: rgba(10, 3, 103, 0.2);
+    width: 120px; }
+  #home-c .process p {
+    margin: 1.5rem; }
   #home-c .process-icon {
-    border-radius: 50%;
+    border-radius: 10%;
     background: #333;
-    color: #fff;
     padding: 2rem;
     width: 70px;
-    height: 70px;
-    line-height: 70px;
+    height: 90px;
+    line-height: 90px;
     text-align: center;
     position: relative;
     transition: all 1s; }
     #home-c .process-icon:hover {
       background: #ee7560;
-      width: 90px;
-      height: 90px;
+      width: 105px;
+      height: 105px;
       line-height: 90px; }
       #home-c .process-icon:hover .process-step {
         background: #333; }
@@ -296,7 +315,8 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 20px;
+    font-size: 1rem;
+    text-align: center;
     background: #ee7560;
     color: #fff;
     border-radius: 50%;
@@ -305,6 +325,8 @@ img {
     line-height: 20px;
     padding: 1rem;
     transition: all 1s; }
+    #home-c .process-step a {
+      text-align: center; }
 
 #about-a .about-info {
   display: grid;
@@ -312,7 +334,10 @@ img {
   grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3"; }
   #about-a .about-info .award-1 .fas,
   #about-a .about-info .award-2 .fas,
-  #about-a .about-info .award-3 .fas {
+  #about-a .about-info .award-3 .fas,
+  #about-a .about-info .award-4 .fas,
+  #about-a .about-info .award-5 .fas,
+  #about-a .about-info .award-6 .fas {
     color: #ee7560;
     margin: 1rem; }
 
@@ -347,11 +372,8 @@ img {
 
 #about-c .about-logos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
-
-#about-c img {
-  width: 80%; }
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0.5rem; }
 
 #about-d .testimonials {
   display: grid;
@@ -372,36 +394,13 @@ img {
     border-radius: 50%;
     margin-right: 0.5rem; }
 
-#contact-a .text-fields {
-  display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
-  grid-gap: 1.2rem;
-  margin-bottom: 1.2rem; }
-  #contact-a .text-fields .name-input {
-    grid-area: name; }
-  #contact-a .text-fields .email-input {
-    grid-area: email; }
-  #contact-a .text-fields .subject-input {
-    grid-area: subject; }
-  #contact-a .text-fields .phone-input {
-    grid-area: phone; }
-  #contact-a .text-fields .message-input {
-    grid-area: message;
-    height: 100px; }
-  #contact-a .text-fields .text-input {
-    padding: 0.5rem 1rem; }
-
-#contact-a button[type="submit"] {
-  width: 50%; }
-
-#contact-b .contact-info {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center; }
-
-#contact-c h1 {
-  text-align: center;
-  font-size: 4rem; }
+#contact-b {
+  margin-bottom: 0rem; }
+  #contact-b .contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    color: #f4f4f4; }
 
 #main-footer {
   background: #333;
@@ -413,6 +412,7 @@ img {
     height: 5rem;
     align-items: center; }
     #main-footer .footer-content .social .fab {
+      color: white;
       margin-right: 1rem;
       border: 2px #fff solid;
       border-radius: 50%;
@@ -424,7 +424,7 @@ img {
       #main-footer .footer-content .social .fab:hover {
         background: #ee7560; }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #header-home {
     height: 30rem; }
     #header-home .header-content {
@@ -435,9 +435,15 @@ img {
         font-size: 1.3rem;
         padding-top: 1rem; }
       #header-home .header-content a {
-        padding: 0.8rem; } }
+        padding: 0.8rem; }
+  #home-c .process {
+    margin-bottom: 10rem; } }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
+  #home-c .process {
+    margin-bottom: 14rem; } }
+
+@media (max-width: 590px) {
   #main-nav {
     flex-direction: column;
     align-items: center; }
@@ -466,6 +472,9 @@ img {
       padding-bottom: 0; }
   #home-b .stats div {
     padding: 2rem 0 1rem 0; }
+  #home-c .process {
+    margin-bottom: 0;
+    grid-gap: 6rem; }
   #about-a .about-info {
     grid-template-areas: "bioimage" "bio" "aw1" "aw2" "aw3"; }
   #about-c {

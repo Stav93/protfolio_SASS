@@ -137,14 +137,13 @@ img {
         line-height: 1.2;
         padding-top: 0.3rem;
         padding-bottom: 0.8rem;
-
       }
       &.stats-p {
         font-size: 1rem;
         line-height: 1.2;
       }
       &.stats-number {
-        font-size:0.8rem;
+        font-size: 0.8rem;
         font-weight: bold;
         padding-top: 0.5rem;
       }
@@ -176,26 +175,64 @@ img {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 350px;
-      grid-gap: 1.5rem;
+      grid-gap: 1rem;
       text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 7rem;
+
+      h3 {
+        margin-top: 1rem;
+      }
+
+      .project {
+        &-1 {
+          background: rgba(93, 3, 121, 0.8);
+          width: 4.5rem;
+        }
+        &-2 {
+          background: rgba(10, 3, 103, 0.8);
+          width: 4.5rem;
+        }
+      }
+
+      #project {
+        &-1 {
+          background: url("../img/dogs parks app.png") no-repeat 50% 50% / cover;
+          //  border: 3px rgba(250, 142, 113, 0.3) solid;
+          // border: 0.5px rgba(93, 3, 121, 0.5) solid;
+          color: rgba(93, 3, 121, 0.2);
+          width: 120px;
+        }
+        &-2 {
+          background: url("../img/me and my dog.png") no-repeat 50% 50% / cover;
+          // border: 3px rgba(250, 142, 113, 0.7) solid;
+          // border: 0.5px rgba(10, 3, 103, 0.5) solid;
+          color: rgba(10, 3, 103, 0.2);
+          width: 120px;
+        }
+      }
+
+      p {
+        margin: 1.5rem;
+      }
 
       //process-icon
       &-icon {
-        border-radius: 50%;
+        border-radius: 10%;
         background: $dark-color;
-        color: set-text-color($dark-color);
+        // color: set-text-color($dark-color);
         padding: 2rem;
         width: 70px;
-        height: 70px;
-        line-height: 70px;
+        height: 90px;
+        line-height: 90px;
         text-align: center;
         position: relative;
         transition: all 1s;
 
         &:hover {
           background: $main-color;
-          width: 90px;
-          height: 90px;
+          width: 105px;
+          height: 105px;
           line-height: 90px;
 
           .process-step {
@@ -208,7 +245,8 @@ img {
         position: absolute;
         top: 0;
         right: 0;
-        font-size: 20px;
+        font-size: 1rem;
+        text-align: center;
         background: $main-color;
         color: set-text-color($dark-color);
         border-radius: 50%;
@@ -217,6 +255,10 @@ img {
         line-height: 20px;
         padding: 1rem;
         transition: all 1s;
+
+        a {
+          text-align: center;
+        }
       }
     }
   }
@@ -235,7 +277,10 @@ img {
 
       .award-1 .fas,
       .award-2 .fas,
-      .award-3 .fas {
+      .award-3 .fas,
+      .award-4 .fas,
+      .award-5 .fas,
+      .award-6 .fas {
         color: $main-color;
         margin: 1rem;
       }
@@ -279,12 +324,15 @@ img {
   &-c {
     .about-logos {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
+      grid-template-columns: repeat(5, 1fr);
+      grid-gap: 0.5rem;
     }
-    img {
-      width: 80%;
-    }
+    // img {
+    //   width: 80%;
+    // }
+    // i {
+    //   width: 80%;
+    // }
   }
   //About D - Testimonials
   &-d {
@@ -318,58 +366,61 @@ img {
 
 //Contact Page
 #contact {
-  &-a {
-    .text-fields {
-      display: grid;
-      grid-template-areas:
-        "name email"
-        "subject phone"
-        "message message";
-      grid-gap: 1.2rem;
-      margin-bottom: 1.2rem;
+  // &-a {
+  //   .text-fields {
+  //     display: grid;
+  //     grid-template-areas:
+  //       "name email"
+  //       "subject phone"
+  //       "message message";
+  //     grid-gap: 1.2rem;
+  //     margin-bottom: 1.2rem;
 
-      //grid areas
-      .name-input {
-        grid-area: name;
-      }
-      .email-input {
-        grid-area: email;
-      }
-      .subject-input {
-        grid-area: subject;
-      }
-      .phone-input {
-        grid-area: phone;
-      }
-      .message-input {
-        grid-area: message;
-        height: 100px;
-      }
+  //     //grid areas
+  //     .name-input {
+  //       grid-area: name;
+  //     }
+  //     .email-input {
+  //       grid-area: email;
+  //     }
+  //     .subject-input {
+  //       grid-area: subject;
+  //     }
+  //     .phone-input {
+  //       grid-area: phone;
+  //     }
+  //     .message-input {
+  //       grid-area: message;
+  //       height: 100px;
+  //     }
 
-      .text-input {
-        padding: 0.5rem 1rem;
-      }
-    }
+  //     .text-input {
+  //       padding: 0.5rem 1rem;
+  //     }
+  //   }
 
-    button[type="submit"] {
-      width: 50%;
-    }
-  }
+  //   button[type="submit"] {
+  //     width: 50%;
+  //   }
+  // }
 
   &-b {
+    margin-bottom: 0rem;
+
     .contact-info {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       text-align: center;
+      color: $light-color;
     }
   }
 
-  &-c {
-    h1 {
-      text-align: center;
-      font-size: 4rem;
-    }
-  }
+  // &-c {
+  //   h1 {
+  //     text-align: center;
+  //     font-size: 4rem;
+  //   }
+  // }
 }
 
 //Footer
@@ -385,6 +436,7 @@ img {
     align-items: center;
 
     .social .fab {
+      color: white;
       margin-right: 1rem;
       border: 2px #fff solid;
       border-radius: 50%;
