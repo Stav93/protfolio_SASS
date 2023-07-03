@@ -93,12 +93,22 @@ input[class^="btn-"]:hover {
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3); }
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7); }
+
+.items2 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr); }
+  .items2 .item {
+    filter: drop-shadow(0 0 1rem #ee7560); }
+  .items2 a {
+    color: white; }
 
 .item {
   position: relative;
   background: #ee7560;
-  overflow: hidden; }
+  overflow: hidden;
+  filter: drop-shadow(0 0 1rem #ccc); }
   .item::after {
     content: "";
     position: absolute;
@@ -133,7 +143,7 @@ input[class^="btn-"]:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     line-height: 0; }
   .item-text {
     position: absolute;
@@ -266,7 +276,7 @@ img {
   background: #f4f4f4; }
   #home-b div div {
     background: #de9285;
-    border: 4px #f4f4f4 solid; }
+    border: 3px #ccc solid; }
 
 #home-c .process {
   display: grid;
@@ -395,7 +405,7 @@ img {
     margin-right: 0.5rem; }
 
 #contact-b {
-  margin-bottom: 0rem; }
+  margin-bottom: 2rem; }
   #contact-b .contact-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

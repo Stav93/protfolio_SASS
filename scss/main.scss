@@ -156,7 +156,7 @@ img {
       div {
         background: #de9285;
         // background: #f99a8a;
-        border: 4px $light-color solid;
+        border: 3px $medium-color solid;
       }
 
       // &:nth-child(odd) {
@@ -405,7 +405,7 @@ img {
   // }
 
   &-b {
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
 
     .contact-info {
       display: grid;
